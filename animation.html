@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        text-decoration: none;
+        padding: 20px;
+        margin: 20px;
+        border: none;
+        color: gray;
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #83a4d4 0%, #b6fbff 51%, #83a4d4 100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+
+    }
+
+    button:hover {
+        transform: scale(1.4);
+        transition: all 1s;
+    }
+</style>
+
+<body>
+    <button class="btn-grad"><a href="./google.html">Google</a></button><br>
+    <button class="btn-grad"><a href="./index.html">Pulse</a></button><br>
+    <button class="btn-grad"><a href="./images.html">Images</a></button>
+</body>
+
+</html>

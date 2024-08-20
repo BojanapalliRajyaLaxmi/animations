@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        border: 2ps solid;
+        height: 300px;
+        width: 200px;
+        /* overflow-x: hidden;+ */
+    }
+    .container >.images{
+        display: flex;
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+        
+    }
+    .images{
+        transform: translate(-1000% 100%);
+        transition: all ease 4s;
+        animation: scroll 10s forwards infinite;
+    }
+    @keyframes scroll {
+        0%{
+            transform: translateX(0%);
+        }
+        25%{
+            transform: translateX(-25%);
+        }
+        50%{
+            transform: translateX(-50%);
+        }
+        75%{
+            transform: translateX(-75%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="images">
+            <img src="https://media.istockphoto.com/id/1225173869/photo/house-boat-anchored-in-lake-with-jungle-background-backwaters-kerala-india.jpg?s=612x612&w=0&k=20&c=uo-bsRQjhlT9AgeWBs_pkSvHQwStCelMC75EUpzwjHU=" alt="">
+            <img src="https://media.istockphoto.com/id/1356626974/photo/rear-view-on-young-family-walking-on-avenue-in-autumn-colors.jpg?s=612x612&w=0&k=20&c=YpGEmt3f8C1bG7IKFXOt-SKkyGMhD0aeSeLiB_UW3qc=" alt="">
+            <img src="https://media.istockphoto.com/id/514856110/photo/woman-working-on-the-rice-field.jpg?s=612x612&w=0&k=20&c=h-8t0o176V0dzGoZPubJOciolhqvTIYY-S7otdytY7Y=" alt="">
+            <img src="https://media.istockphoto.com/id/942152278/photo/gadisar-lake-at-jaisalmer-rajasthan-at-sunrise-with-ancient-temples-and-archaeological-ruins.jpg?s=612x612&w=0&k=20&c=HvhbHZ8HH_lAjAAI2pmqL4mUipyyAwy31qp5jjKQTO0=" alt="">
+            <img src="https://media.istockphoto.com/id/1213148829/photo/aerial-view-asphalt-road-and-green-forest-forest-road-going-through-forest-with-car-adventure.jpg?s=612x612&w=0&k=20&c=YsSg_kQBpBIwtbcdAYPk1zPDT4syXAjVw-XvRchQfVo=" alt="">
+            <img src="https://media.istockphoto.com/id/867105606/photo/back-view-of-a-young-woman-hiking-in-forest.jpg?s=612x612&w=0&k=20&c=3331Mw24Q9WNErZ_ProACHcyI_8Fu0B_ART7E_k0Y7s=" alt="">
+        </div>
+    </div>
+</body>
+</html>
